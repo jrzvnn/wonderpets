@@ -1,0 +1,56 @@
+.footer_container {
+    background-color: #3D3A3A;
+    color: white;
+    padding: 1.5rem var(--global-h-offset);
+}
+
+.footer_logo {
+    margin-bottom: 1rem;
+}
+
+.footer_logo img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer_logo h3 {
+    text-align: center;
+    padding: 0;
+    font-weight: 600;
+}
+
+.footer_follow_icons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    /* color of follow icon svgs */
+    filter: invert(90%) sepia(34%) saturate(163%) hue-rotate(105deg) brightness(95%) contrast(93%);
+}
+
+.footer_follow_icons img {
+    width: 30px;
+}
+
+.follow_us {
+    margin-bottom: 1rem;
+}
+
+.follow_us p {
+    text-align: center;
+}
+
+.contact {
+    font-weight: 100;
+}
+
+.email_icon {
+    opacity: 0.5;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+

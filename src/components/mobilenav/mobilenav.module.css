@@ -1,0 +1,54 @@
+.meta_nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: var(--theme-color);
+    gap: 1em;
+    padding: 0.4em var(--global-h-offset);
+}
+
+.menu {
+    font-size: 1.8em;
+    font-weight: 100;
+    opacity: .6;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.nav_links_container {
+    padding: 0.5em var(--global-h-offset);
+    background-color: var(--theme-color);
+    width: 60%;
+    height: 100vh;
+    animation: slide 0.6s;
+}
+
+.nav_links li {
+    padding: 0.5em 0em;
+}
+
+.get_involved {
+    padding-left: 2em;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+

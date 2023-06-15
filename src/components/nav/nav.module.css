@@ -1,0 +1,49 @@
+.nav {
+    --theme-color: #B9EAD0;
+    background-color: var(--theme-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4em 2em;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.nav_links {
+    display: flex;
+    gap: 1.2em;
+    font-weight: 300;
+}
+
+
+.nav_links li:hover .get_involved {
+    display: block;
+}
+
+.nav_links li:not(:nth-child(2)):hover {
+    font-weight: 500;
+}
+
+
+.get_involved {
+    background-color: #B9EAD0;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 1em 0em;
+}
+
+.get_involved li {
+    display: block;
+    padding: 0.5em 1.5em;
+}
+
+.get_involved li:hover {
+    font-weight: 500;
+}

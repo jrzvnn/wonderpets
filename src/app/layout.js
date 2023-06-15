@@ -1,7 +1,13 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
+"use client";
 
-const inter = Inter({ subsets: ['latin'] })
+import './globals.css'
+import { Poppins } from 'next/font/google'
+import { useEffect, useState } from 'react'
+import MobileNav from '@/components/mobilenav/MobileNav'
+import Nav from '@/components/nav/Nav'
+import Footer from '@/components/footer/Footer'
+
+const poppins = Poppins({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']})
 
 export const metadata = {
   title: 'Create Next App',
@@ -9,9 +15,32 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  const [windowDimension, setWindowDimension] = useState(null);
+
+  useEffect(() => {
+    setWindowDimension(window.innerWidth);
+  }, []);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimension(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // mobile window size
+  const isMobile = windowDimension <= 640;
+
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        {/* change navigation bar based on device window size */}
+        {isMobile ? (<MobileNav/>) : (<Nav/>)}
+        {children}
+        <Footer/>
+        </body>
     </html>
   )
 }
