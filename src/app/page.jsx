@@ -1,9 +1,10 @@
+"use client"
 import styles from '@/app/page.module.css'
 import 'material-icons/iconfont/material-icons.css';
 
 export default function Home() { 
   const displayImgs = ["cat_display.png", "bird_display.png", "fish_display.png", "dog_display.png", "cute_animal_display.png"]
-  const displayImgURL = `assets/stock/${displayImgs[Math.floor(Math.random() * displayImgs.length)]}`
+  const displayImgURL = `assts/stock/${displayImgs[Math.floor(Math.random() * displayImgs.length)]}`
   const materialIcons = "material-icons-outlined"
 
   return (
