@@ -1,6 +1,7 @@
 "use client"
 import styles from '@/app/page.module.css'
 import 'material-icons/iconfont/material-icons.css';
+import AdoptCarousel from '@/components/adopt_carousel/AdoptCarousel';
 
 export default function Home() { 
   const displayImgs = ["cat_display.png", "bird_display.png", "fish_display.png", "dog_display.png", "cute_animal_display.png"]
@@ -35,7 +36,7 @@ export default function Home() {
         </div>
         <div className={`${styles.hist_imp_val_list_container}`}>
           <span className={`${materialIcons} ${styles.icon}`}>emoji_nature</span>
-          <h3>Our Impact</h3>
+          <h3 className={`${styles.red}`}>Our Impact</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, possimus!</p>
         </div>
         <div className={`${styles.hist_imp_val_list_container}`}>
@@ -47,6 +48,7 @@ export default function Home() {
 
       {/* adopt a dog, cat, bird, fish, cute pet */}
       {/* implement a draggable caroussel, each slide for each pet */}
+      <AdoptCarousel />
 
       {/* featured pets */}
       {/* implement a draggable caroussel, each slide for each pet category*/}

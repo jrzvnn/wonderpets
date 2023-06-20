@@ -1,5 +1,5 @@
 .footer_container {
-    background-color: #3D3A3A;
+    background-color: var(--dark-color-1);
     color: white;
     padding: 1.5rem var(--global-h-offset);
 }

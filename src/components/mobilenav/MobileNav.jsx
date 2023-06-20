@@ -5,6 +5,7 @@ import React from 'react'
 import 'material-icons/iconfont/material-icons.css';
 import styles from '@/components/mobilenav/mobilenav.module.css'
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 const MobileNav = () => {
     const navLogoURL = "/assets/icons/wonderpets-logo.png";
@@ -43,7 +44,7 @@ const MobileNav = () => {
                 </ul>
               </li>
               <li><a href="/">Resources</a></li>
-              <li><a href="/">Contact</a></li>
+              <li><Link href="/contact">Contact</Link></li>
             </ul>  
           </div>
         ) : <span></span>

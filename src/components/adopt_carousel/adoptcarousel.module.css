@@ -1,0 +1,25 @@
+.wrapper {
+    background-color: var(--dark-color-1);
+    padding: 1rem;
+}
+
+.card {
+    background: linear-gradient(var(--accent-color-1), var(--theme-color));
+    width: 40vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.card_label {
+    padding: 0.5rem;
+    background-color: white;
+    text-align: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}

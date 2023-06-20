@@ -5,6 +5,8 @@
 :root {
   --theme-color: #C4EBE2;
   --accent-color-1: #CCE7D4;
+  --dark-color-1: #3D3A3A;
+
   --global-h-offset: 1.4em;
 }
 
