@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 const MobileNav = () => {
-    const navLogoURL = "/assets/icons/wonderpets-logo.png";
+    const navLogoURL = "/assets/icons/wonderpets_logo.png";
     const materialIcons = "material-icons-outlined"
     const [menuState, setMenuState] = useState(false);
 
@@ -24,7 +24,7 @@ const MobileNav = () => {
           {/* wonder pets logo and title */}
           <a href="/">
             <div className={styles.nav_logo}>
-                <img src={navLogoURL} alt="wonder pets logo" width="50px"/>
+                <img src={navLogoURL} alt="wonder pets logo"/>
                 <span>Wonder Pets</span>
             </div>
           </a>

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '@/components/nav/nav.module.css'
 
 const Nav = () => {
-  const navLogoURL = "/assets/icons/wonderpets-logo.png";
+  const navLogoURL = "/assets/icons/wonderpets_logo.png";
 
   return (
     <div>

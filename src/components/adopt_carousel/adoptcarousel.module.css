@@ -1,25 +1,53 @@
 .wrapper {
     background-color: var(--dark-color-1);
     padding: 1rem;
+    position: relative;
 }
 
-.card {
-    background: linear-gradient(var(--accent-color-1), var(--theme-color));
-    width: 40vw;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.wrapper, .carousel {
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
-.card img {
-    width: 80%;
-    display: block;
-    margin: auto;
+
+.carousel {
+    display: flex;
+    gap: 1rem;
 }
 
-.card_label {
-    padding: 0.5rem;
+.back_icon, .forward_icon {
+    font-size: 1.2rem;
+    border-radius: 50%;
+    padding: 5px;
     background-color: white;
-    text-align: center;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    position: absolute;
+    opacity: 0.8;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.back_icon {
+    left: 0px;
+    margin-left: 8px;
+}
+
+.forward_icon {
+    right: 0px;
+    margin-right: 8px;
+}
+
+.disable {
+    pointer-events:none;
+}
+
+.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+
+.carousel {
+    scroll-behavior: smooth;
 }

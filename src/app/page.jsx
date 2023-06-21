@@ -2,10 +2,10 @@
 import styles from '@/app/page.module.css'
 import 'material-icons/iconfont/material-icons.css';
 import AdoptCarousel from '@/components/adopt_carousel/AdoptCarousel';
+import FeaturedPet from '@/components/featured_pet/FeaturedPet';
+import Link from 'next/link';
 
 export default function Home() { 
-  const displayImgs = ["cat_display.png", "bird_display.png", "fish_display.png", "dog_display.png", "cute_animal_display.png"]
-  const displayImgURL = `assets/stock/${displayImgs[Math.floor(Math.random() * displayImgs.length)]}`
   const materialIcons = "material-icons-outlined"
 
   return (
@@ -18,7 +18,7 @@ export default function Home() {
           <button>Adopt</button>
           <button className={styles.button_donate}>Donate</button>
         </div>
-        <img src={displayImgURL} className={styles.display_img} alt="" />
+        <img src={`/assets/stock/dog_display.png`} className={styles.display_img} alt="" />
       </div>
 
       {/* who are we */}
@@ -46,12 +46,20 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Adopt Dog and Cat*/}
+      <div className={`${styles.adopt_dog_cat_wrapper}`}>
+        <h2 className={`${styles.adopt_dog_cat_title}`}>Your New Best Friend Is Waiting For You</h2>
+        <img class={`${styles.dog_cat_img}`} src="/assets/stock/dog_cat_adopt.png" alt="" /> 
+        <Link href='/adopt/dog'><button className={`${styles.dog_cat_button} ${styles.dog_button}`}>Adopt a Dog</button></Link>
+        <Link href='/adopt/cat'><button className={`${styles.dog_cat_button} ${styles.cat_button}`}>Adopt a Cat</button></Link>
+      </div>
+
       {/* adopt a dog, cat, bird, fish, cute pet */}
-      {/* implement a draggable caroussel, each slide for each pet */}
       <AdoptCarousel />
 
-      {/* featured pets */}
-      {/* implement a draggable caroussel, each slide for each pet category*/}
+      {/* featured pet */}
+      <FeaturedPet petName="TOBY" petImageURL="/assets/stock/featured_pet_example.png" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, dolor tenetur? Et quisquam debitis quae, illum, numquam molestias, voluptas deleniti placeat impedit nostrum possimus necessitatibus in tempora nobis consequatur asperiores."/>
+      
 
     </div>
   )
