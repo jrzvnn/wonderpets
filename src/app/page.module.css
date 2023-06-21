@@ -62,7 +62,7 @@
     padding: 0 var(--global-h-offset);
     padding-top: 3em;
     text-align: center;
-    background: linear-gradient(var(--theme-color), white);
+    background: linear-gradient(white);
 }
 
 .hist_imp_val_list_container {
@@ -76,3 +76,44 @@
 .hist_imp_val_list_container p {
     font-weight: 300;
 }
+
+/* dog cat adopt */
+.adopt_dog_cat_wrapper {
+    padding: 0 var(--global-h-offset);
+    position: relative;
+    background: var(--theme-color);
+}
+
+.adopt_dog_cat_title {
+    text-align: center;
+    padding: 0 var(--global-h-offset);
+    padding-top: 1.5em;
+}
+
+.dog_cat_img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.dog_cat_button {
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.4em 1em;
+    border-radius: 8px;
+}
+
+.dog_button {
+    position: absolute;
+    top: 40%;
+}
+
+.cat_button {
+    position: absolute;
+    right: var(--global-h-offset);
+    top: 50%
+}
+

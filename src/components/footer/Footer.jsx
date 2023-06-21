@@ -4,7 +4,7 @@ import 'material-icons/iconfont/material-icons.css';
 
 const Footer = () => {
     const materialIcons = "material-icons-outlined";
-    const footerLogoURL = "/assets/icons/wonderpets-logo.png";
+    const footerLogoURL = "/assets/icons/wonderpets_logo_gradient.png";
 
 
     return (

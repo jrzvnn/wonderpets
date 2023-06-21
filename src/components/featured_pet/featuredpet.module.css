@@ -1,0 +1,50 @@
+.wrapper {
+    padding: 2em var(--global-h-offset);
+    background: linear-gradient(var(--accent-color-1), white);
+}
+
+.featured {
+    font-weight: 400;
+}
+
+.featured_pet {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.img_desc_wrapper {
+    display: flex;
+}
+
+.featured_img {
+    border-radius: 20px;
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 1em 0;
+}
+
+.description {
+    text-align: justify;
+    font-weight: 300;
+    margin: 1.3em 0;
+}
+
+.featured_pet_button {
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 100%;
+    background-color: var(--accent-color-1);
+    border: none;
+    border-radius: 20px;
+    padding: 0.3em;
+    border: 1px solid black;
+}
+
+.featured_pet_button span {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
