@@ -1,15 +1,30 @@
-# Wonder Pets - Pet Adoption Mobile App 🐾
+# Wonder Pets - Pet Adoption App 🐾
 
-Wonder Pets is a mobile app designed to facilitate pet adoption by connecting potential adopters with rescue pets. This app utilizes Next.js, a powerful framework, for efficient development and optimal performance.
+Wonder Pets is a app designed to facilitate pet adoption by connecting potential adopters with rescue pets. This app utilizes Next.js, a powerful framework, for efficient development and optimal performance.
 
 ## 🚀 Getting Started
 
-To run the mobile app, follow these steps:
+To run the app, follow these steps:
 
 1. Clone the repository.
+```bash
+$ git clone https://github.com/jrzvnn/wonderpets.git
+$ cd wonderpets
+
+```
 2. Install the required dependencies by running npm install or yarn install.
-3. Start the development server by running npm run dev or yarn dev.
-4. Open the app on your mobile device or simulator.
+```bash
+$ npm install next
+# or
+$ yarn install next
+```
+3. Start the development server by running.
+```bash
+$ npm run dev
+# or
+$ yarn dev
+```  
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Features
 
@@ -22,11 +37,11 @@ To run the mobile app, follow these steps:
 
 ## Technology Used
 
-The Wonder Pets mobile app is built using Next.js, a popular framework that combines the benefits of React and server-side rendering. This allows for a seamless and interactive user experience. Additionally, Next.js optimizes performance and ensures fast loading times for a smooth mobile app experience.
+The Wonder Pets app is built using Next.js, a popular framework that combines the benefits of React and server-side rendering. This allows for a seamless and interactive user experience. Additionally, Next.js optimizes performance and ensures fast loading times for a smooth app experience.
 
 ## Deployment
 
-The mobile app is deployed using the Vercel platform, providing a reliable and scalable hosting solution. Deployment settings are configured to ensure a seamless deployment process and continuous integration.
+The app is deployed using the Vercel platform, providing a reliable and scalable hosting solution. Deployment settings are configured to ensure a seamless deployment process and continuous integration.
 
 
 
