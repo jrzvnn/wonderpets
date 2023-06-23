@@ -17,7 +17,7 @@ const Nav = () => {
 
         {/* navigation links */}
         <ul className={styles.nav_links}>
-          <li><a href="/">About</a></li>
+          <li><a href="/about">About</a></li>
           <li>Get Involved
             <ul className={styles.get_involved}>
               <li><a href='/'>Adopt a Pet</a></li>
