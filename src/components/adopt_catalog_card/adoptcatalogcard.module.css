@@ -1,0 +1,43 @@
+.wrapper {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    line-height: 1.7rem;
+    min-width: 30vw;
+    max-width: 42vw;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.wrapper:hover {
+    filter: brightness(50%);
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card_details {
+    padding: 0.5em 1em;
+}
+
+.detail {
+    display: flex;
+    align-content: center;
+}
+
+.detail_title {
+    margin-right: 8px;
+    opacity: 0.3;
+}
+
+.detail_value {
+    font-weight: 500;
+    min-width: 30vw;
+    max-width: 40vw;
+}
+

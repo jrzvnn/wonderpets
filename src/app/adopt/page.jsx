@@ -7,3 +7,5 @@ const AdoptParent = () => {
 }
 
 export default AdoptParent
+
+

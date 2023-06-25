@@ -2,6 +2,10 @@
     display: inline-block;
 }
 
+.wrapper:hover {
+    filter: brightness(50%);
+}
+
 .card {
     background: linear-gradient(var(--accent-color-1), var(--theme-color));
     width: 40vw;

@@ -8,26 +8,26 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 const MobileNav = () => {
-    const navLogoURL = "/assets/icons/wonderpets_logo.png";
-    const materialIcons = "material-icons-outlined"
-    const [menuState, setMenuState] = useState(false);
+  const navLogoURL = "/assets/icons/wonderpets_logo.png";
+  const materialIcons = "material-icons-outlined"
+  const [menuState, setMenuState] = useState(false);
 
-    function toggleMenu() {
-      setMenuState((menuState == false) ? true : false);
-    }
+  function toggleMenu() {
+    setMenuState((menuState == false) ? true : false);
+  }
 
   return (
     <div className={styles.meta_nav}>
       <nav className={styles.nav}>
-          {/* menu icon */}
-          <span className={`${materialIcons} ${styles.menu}`} onClick={toggleMenu}>menu</span>
-          {/* wonder pets logo and title */}
-          <a href="/">
-            <div className={styles.nav_logo}>
-                <img src={navLogoURL} alt="wonder pets logo"/>
-                <span>Wonder Pets</span>
-            </div>
-          </a>
+        {/* menu icon */}
+        <span className={`${materialIcons} ${styles.menu}`} onClick={toggleMenu}>menu</span>
+        {/* wonder pets logo and title */}
+        <a href="/">
+          <div className={styles.nav_logo}>
+            <img src={navLogoURL} alt="wonder pets logo" />
+            <span>Wonder Pets</span>
+          </div>
+        </a>
       </nav>
 
       {/* toggle nav links */}
@@ -35,17 +35,13 @@ const MobileNav = () => {
         (
           <div className={styles.nav_links_container}>
             <ul className={styles.nav_links}>
-              <li><a href="/">About</a></li>
-              <li>Get Involved
-                <ul className={styles.get_involved}>
-                  <li><a href="/">Adopt a Pet</a></li>
-                  <li><a href="/">Donate</a></li>
-                  <li><a href="/">Join Us</a></li>
-                </ul>
-              </li>
-              <li><a href="/">Resources</a></li>
-              <li><Link href="/contact">Contact</Link></li>
-            </ul>  
+              <li className={styles.nav_link}><a href="/"><span className={`${materialIcons} ${styles.nav_link_icon}`}>info</span>About</a></li>
+              <li className={styles.nav_link}><a href="/#adopt_section"><span className={`${materialIcons} ${styles.nav_link_icon}`}>pets</span>Adopt</a></li>
+              <li className={styles.nav_link}><a href="/"><span className={`${materialIcons} ${styles.nav_link_icon}`}>food_bank</span>Donate</a></li>
+              <li className={styles.nav_link}><a href="/"><span className={`${materialIcons} ${styles.nav_link_icon}`}>handshake</span>Join Us</a></li>
+              <li className={styles.nav_link}><a href="/"><span className={`${materialIcons} ${styles.nav_link_icon}`}>folder_open</span>Resources</a></li>
+              <li className={styles.nav_link}><Link href="/contact"><span className={`${materialIcons} ${styles.nav_link_icon}`}>contact_support</span>Contact</Link></li>
+            </ul>
           </div>
         ) : <span></span>
       }
@@ -55,3 +51,5 @@ const MobileNav = () => {
 }
 
 export default MobileNav
+
+
