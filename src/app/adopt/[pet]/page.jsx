@@ -1,14 +1,14 @@
 "use client"
 
+import AdoptCatalog from '@/components/adopt_catalog/AdoptCatalog';
+import AdoptFilter from '@/components/adopt_filter/AdoptFilter';
 import AdoptHeader from '@/components/adopt_header/AdoptHeader';
 import {usePathname} from 'next/navigation'
 import React from 'react'
 
 const Adopt = () => {
-  {/* get last segment of URL */}
-  
-
   function getCategory() {
+    {/* get last segment of URL */}
     const category = usePathname().split("/").pop().toLowerCase();
     let headerTitle = '';
     let imageURL = '';
@@ -55,8 +55,14 @@ const Adopt = () => {
 
   return (
     <div>
+      {/* Adopt Header */}
       <AdoptHeader headerTitle={category.headerTitle} imageURL={category.imageURL} imageAlt={category.imageAlt}/>
-      Adopt a {category.category}
+
+      {/* Age, Sex, Size, Sort by Filter */}
+      <AdoptFilter category={category.category}/> 
+
+      {/* Adopt Catalog */}
+      <AdoptCatalog category={category.category}/>
     </div>
   )
 }
