@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  padding: 1em var(--global-h-offset);
+  background-color: var(--theme-color);
+  border-bottom-right-radius: 150px;
+  align-items: center;
+}
+
+.header_title {
+  font-weight: 600;
+}
+
+.image {
+  max-width: 50%;
+  height: auto;
+  object-fit: contain;
+}
+
