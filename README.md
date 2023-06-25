@@ -41,7 +41,13 @@ The Wonder Pets app is built using Next.js, a popular framework that combines th
 
 ## Deployment
 
-The app is deployed using the Vercel platform, providing a reliable and scalable hosting solution. Deployment settings are configured to ensure a seamless deployment process and continuous integration.
+The app is deployed using the Appilix platform, which allows you to convert your website into a mobile app without any coding experience. Appilix is a powerful, fast, and easy-to-use platform that offers a variety of features. By leveraging Appilix, Wonder Pets can be transformed into a mobile app effortlessly.
+
+## License
+
+Copyright © 2023, 
+Released under the [MIT license](LICENSE).
+
 
 
 
