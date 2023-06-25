@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_image {
+    min-width: 50vw;
+    max-width: 60vw;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.images_slide {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.images_slide .image {
+    min-width: 15vw;
+    max-width: 20vw;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+.images_slide .image:hover, .images_slide .image:hover  {
+    opacity: 1;
+}
+
+.highlight_image {
+    opacity: 1 !important;
+}

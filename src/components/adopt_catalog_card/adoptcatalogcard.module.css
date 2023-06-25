@@ -8,6 +8,10 @@
     font-size: 1rem;
 }
 
+.wrapper:hover {
+    filter: brightness(50%);
+}
+
 .image {
     width: 100%;
     height: auto;
@@ -36,3 +40,4 @@
     min-width: 30vw;
     max-width: 40vw;
 }
+

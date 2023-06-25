@@ -15,7 +15,7 @@ export default function Home() {
         <h1 className={styles.h1}>Where Love Meets HOME.</h1>
         <p className={styles.subtitle}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro quibusdam dolorum sunt.</p>
         <div className={styles.adopt_donate_container}>
-          <a href="#adopt_section"><button>Adopt</button></a>
+          <a href="#adopt_section"><button className={styles.adopt_button}>Adopt</button></a>
           <button className={styles.button_donate}>Donate</button>
         </div>
         <img src={`/assets/stock/dog_display.png`} className={styles.display_img} alt="" />

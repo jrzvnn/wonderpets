@@ -30,6 +30,11 @@
     margin-bottom: 2em;
 }
 
+.adopt_button:hover {
+    background-color: black;
+    color: white;
+}
+
 .button_donate {
     background-color: black !important;
     color: var(--theme-color);
@@ -106,6 +111,11 @@
     border-radius: 8px;
 }
 
+.dog_cat_button:hover {
+    background-color: white;
+    color: black;
+}
+
 .dog_button {
     position: absolute;
     top: 40%;
@@ -116,4 +126,6 @@
     right: var(--global-h-offset);
     top: 50%
 }
+
+
 
