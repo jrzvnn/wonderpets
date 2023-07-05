@@ -46,7 +46,7 @@ The app is deployed using the Appilix platform, which allows you to convert your
 ## License
 
 Copyright © 2023, 
-Released under the [MIT license](LICENSE).
+Released under the [GNU General Public license](LICENSE).
 
 
 
