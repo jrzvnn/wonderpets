@@ -63,6 +63,7 @@ const Pet = () => {
       </div>
 
       <button className={styles.adopt_button}><a href={urlPath}>Apply to Adopt</a></button>
+      <button className={styles.donate_button}><a href={urlPath}>Love to Donate</a></button>
 
     </div>
   )

@@ -1,72 +1,89 @@
 .wrapper {
-    padding: 1em var(--global-h-offset);
+  padding: 1em var(--global-h-offset);
 }
 
 .pet_name {
-    font-weight: 600;
-    padding: 0.3em 0;
+  font-weight: 600;
+  padding: 0.3em 0;
 }
 
 .characteristics {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .characteristic {
-    background-color: var(--accent-color-1);
-    padding: 0.3em 1em;
-    border-radius: 20px;
+  background-color: var(--accent-color-1);
+  padding: 0.3em 1em;
+  border-radius: 20px;
 }
 
 .bio hr {
-    margin: 15px 10px;
-    opacity: 0.5;
+  margin: 15px 10px;
+  opacity: 0.5;
 }
 
-
-.bio ul, .bio ul li {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+.bio ul,
+.bio ul li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .bio ul {
-    gap: 10px;
+  gap: 10px;
 }
 
 .bio ul li {
-    color: rgba(0, 0, 0, 0.6);
-    border: 1px solid rgba(0, 0, 0, 0.6);
-    padding: 0.3em 1em;
-    border-radius: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 0.3em 1em;
+  border-radius: 20px;
 }
 
 .bio_icon {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .about {
-    margin: 30px 0;
-    text-align: justify;
-    font-weight: 400;
+  margin: 30px 0;
+  text-align: justify;
+  font-weight: 400;
 }
 
 .adopt_button {
-    display: block;
-    width: 100%;
-    border: none;
-    background-color: var(--accent-color-1);
-    padding: 0.6em;
-    border-radius: 20px;
-    font-size: 1rem;
-    font-weight: 500;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin: 40px 0;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: var(--accent-color-1);
+  padding: 0.6em;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 40px 0 20px 0;
 }
 
-
 .adopt_button:hover {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
+}
+
+.donate_button {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: var(--accent-color-1);
+  padding: 0.6em;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 0px 0 40px 0;
+}
+
+.donate_button:hover {
+  background-color: black;
+  color: white;
 }
