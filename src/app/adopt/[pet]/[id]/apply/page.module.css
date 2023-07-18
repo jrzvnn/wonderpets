@@ -1,0 +1,50 @@
+.apply_wrapper {
+    padding: 1rem var(--global-h-offset);
+}
+
+.apply_h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.apply_sub {
+    text-align: justify;
+    padding: 0.5rem 0;
+}
+
+.form label {
+    margin-top: 1.3rem;
+}
+
+.btnSubmit {
+    display: block;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.required {
+    color: red;
+}
+
+.image {
+    width: 15rem;
+    height: 15rem;
+    display: block;
+    margin: 1rem auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.pet_image {
+    width: 15rem;
+    height: 15rem;
+    display: block;
+    margin: 1rem auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.pet_name {
+    text-align: center;
+}

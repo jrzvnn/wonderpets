@@ -17,6 +17,11 @@
   font-family: 'Poppins', sans-serif;
 }
 
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
 html,
 body {
   max-width: 100vw;

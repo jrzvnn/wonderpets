@@ -1,25 +1,35 @@
+"use client";
+
 import React from 'react'
 import styles from '@/components/adopt_catalog/adoptcatalog.module.css'
 import AdoptCatalogCard from '../adopt_catalog_card/AdoptCatalogCard'
+import { getPets } from '@/app/firebase/pets'
+import { useEffect, useState } from 'react'
 
-const AdoptCatalog = ({category}) => {
+
+const AdoptCatalog = ({ category }) => {
+  const [pets, setPets] = useState([]);
+
+  useEffect(() => {
+    const fun = async () => {
+      setPets(await getPets(category));
+    }
+    fun();
+  }, []);
+
+
   const altValue = `${category} image`;
 
-  function generateCardCatalogs(n) {
-    let catalogs = [];
-    for (let i = 0; i < n; i++) {
-      catalogs.push(<AdoptCatalogCard imageURL="/assets/stock/image_placeholder.jpg" imageAlt={altValue} name="Pet Name" age="Pet Age" size="Pet Size" category={category}/>);
-    }
-
-    return catalogs;
-  }
 
   return (
-    
+
     <div className={styles.wrapper}>
       {/* Pet List/Catalog */}
       {
-        generateCardCatalogs(10).map((card) => card)
+        //generateCardCatalogs(10).map((card) => card)
+        pets.map((d) => (
+          <AdoptCatalogCard data={d} />
+        ))
       }
     </div>
   )
