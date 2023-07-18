@@ -35,7 +35,7 @@ const MobileNav = () => {
         (
           <div className={styles.nav_links_container}>
             <ul className={styles.nav_links}>
-              <li className={styles.nav_link}><a href="/"><span className={`${materialIcons} ${styles.nav_link_icon}`}>info</span>About</a></li>
+              <li className={styles.nav_link}><a href="/about"><span className={`${materialIcons} ${styles.nav_link_icon}`}>info</span>About</a></li>
               <li className={styles.nav_link}><a href="/#adopt_section"><span className={`${materialIcons} ${styles.nav_link_icon}`}>pets</span>Adopt</a></li>
               <li className={styles.nav_link}><a href="/"><span className={`${materialIcons} ${styles.nav_link_icon}`}>food_bank</span>Donate</a></li>
               <li className={styles.nav_link}><a href="/"><span className={`${materialIcons} ${styles.nav_link_icon}`}>handshake</span>Join Us</a></li>

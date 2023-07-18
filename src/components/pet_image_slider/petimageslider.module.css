@@ -1,14 +1,14 @@
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .main_image {
-    min-width: 50vw;
-    max-width: 60vw;
-    height: auto;
+    height: 17rem;
+    width: 17rem;
+    display: block;
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 20px;

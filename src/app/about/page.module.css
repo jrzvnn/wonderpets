@@ -9,19 +9,14 @@
   margin-bottom: 3em;
 }
 
-.about h1 {
-  font-size: 2.5em;
+.about h1, .about h2 {
+  font-size: 2rem;
   margin-bottom: 1em;
 }
 
-.about h2 {
-  font-size: 2em;
-  margin-top: 2em;
-}
 
 .about p {
   font-size: 1.2em;
   margin-bottom: 2em;
-  margin-right: 3em;
-  margin-left: 3em;
+  text-align: justify;
 }
