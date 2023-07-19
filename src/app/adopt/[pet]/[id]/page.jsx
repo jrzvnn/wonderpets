@@ -13,7 +13,8 @@ const Pet = () => {
   const materialIcons = "material-icons-outlined"
   const [petData, setPetData] = useState([]);
 
-  const urlPath = usePathname() + "/apply";
+  const applyPath = usePathname() + "/apply";
+  const donatePath = usePathname() + "/donate";
   let url = usePathname();
 
   // get pet data
@@ -62,8 +63,8 @@ const Pet = () => {
         {petData.description}
       </div>
 
-      <button className={styles.adopt_button}><a href={urlPath}>Apply to Adopt</a></button>
-      <button className={styles.donate_button}><a href={urlPath}>Love to Donate</a></button>
+      <button className={styles.adopt_button}><a href={applyPath}>Apply to Adopt</a></button>
+      <button className={styles.donate_button}><a href={donatePath}>Love to Donate</a></button>
 
     </div>
   )
