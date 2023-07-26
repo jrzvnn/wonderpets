@@ -45,8 +45,9 @@ export async function submitDonation(donationData) {
     address: donationData.address.trim(),
     contact: donationData.contact.trim(),
     email: donationData.email.trim(),
-    incash: donationData.amount || 0,
-    inkind: {
+    donationType: donationData.donationType.trim(),
+    inCash: donationData.amount || 0,
+    inKind: {
       petFood: donationData.petFood || 0,
       cleaningSupply: donationData.cleaningSupply || 0,
       toysTreats: donationData.toysTreats || 0,
