@@ -84,9 +84,6 @@ export default function Home() {
       </div>
 
       {/* Adopt Dog and Cat*/}
-      <br />
-      <br />
-      <br />
       <div id="adopt_section" className={`${styles.adopt_dog_cat_wrapper}`}>
         <h2 className={`${styles.adopt_dog_cat_title}`}>
           Your New Best Friend Is Waiting For You
@@ -113,7 +110,7 @@ export default function Home() {
 
       {/* featured pet */}
       <FeaturedPet
-        petName="TOBY"
+        petName=" TOBY"
         petImageURL="/assets/stock/featured_pet_example.png"
         description="Lovely Toby loves people, cuddling toys, and giving lots of kisses! Toby is looking to find a forever home with a family who appreciates his maturity and is happy to load him up with lots of pets and belly rubs.
         "
